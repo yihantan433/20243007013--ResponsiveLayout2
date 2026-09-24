@@ -5,7 +5,6 @@
     android:orientation="horizontal"
     android:background="#000000">
 
-    <!-- 左侧：标题和内容（占 3/4 宽度） -->
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -87,7 +86,6 @@
             android:textSize="24sp" />
     </LinearLayout>
 
-    <!-- 右侧：按钮竖排（占 1/4 宽度） -->
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -112,4 +110,3 @@
             android:textColor="#FFFFFF" />
     </LinearLayout>
 </LinearLayout>
-
