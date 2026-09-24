@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+
+    <!-- 第1行：Lab 1 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Lab 1"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+    <!-- 第2行：白色背景 Responsive Layout 1 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:text="Responsive Layout 1"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:background="#FFFFFF"/>
+
+    <!-- 第3行：四个彩色方块（水平 LinearLayout） -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="This"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="#FF0000"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="is"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="#0000FF"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="my"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="#800080"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="first"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:background="#FFFF00"/>
+
+    </LinearLayout>
+
+    <!-- 第4行：Android Application（黑色区域，最大块） -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:text="Android Application"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+    <!-- 第5行：底部按钮区（浅粉色背景） -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#F8E8F8"
+        android:padding="16dp"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="Change"
+            android:backgroundTint="#6A5ACD"
+            android:textColor="#FFFFFF"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="Cancel"
+            android:backgroundTint="#6A5ACD"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+</LinearLayout>
